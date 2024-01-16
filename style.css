@@ -43,7 +43,7 @@ body {
   border: none;
   border-radius: 10em;
   position: absolute;
-  left: 15em;
+  left: 16em;
   background-color: black;
   color: white;
   font-family: cursive;
@@ -53,6 +53,7 @@ ul li {
   list-style-type: none;
   position: relative;
   margin: 1em;
+  align-self: center;
 }
 
 ul li::before {
@@ -62,8 +63,7 @@ ul li::before {
   position: absolute;
   height: 20px;
   width: 20px;
-  top: 5px;
-  right: 290px;
+  right: 270px;
 }
 
 ul .checked {
@@ -80,15 +80,15 @@ ul .checked::before {
 ul li {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 250px;
 }
 
 ul li span {
-  text-decoration: none;
   width: 1.5em;
   text-align: center;
   color: palevioletred;
-  font-size: 1.5em;
+  font-size: 25px;
 }
 ul li span:hover {
   background: rgb(224, 224, 224);
