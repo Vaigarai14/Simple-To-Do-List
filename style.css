@@ -19,8 +19,8 @@ body {
   margin: 10em;
   padding: 2em;
   margin: auto;
-  margin-top: 10em;
-  width: 50vh;
+  margin-top: 5em;
+  width: 20em;
   background-color: white;
   border-radius: 1em;
 }
@@ -87,12 +87,11 @@ ul li {
 ul li span {
   width: 1.5em;
   text-align: center;
-  color: palevioletred;
+  color: rgb(216, 112, 147);
   font-size: 25px;
 }
+
 ul li span:hover {
   background: rgb(224, 224, 224);
   border-radius: 50%;
 }
-
-
