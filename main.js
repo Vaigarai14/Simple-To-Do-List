@@ -30,3 +30,5 @@ ul.addEventListener('click', (e) => {
         e.target.parentElement.remove();
     }
 });
+
+localStorage
