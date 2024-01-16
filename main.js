@@ -13,12 +13,20 @@ function createelement() {
         let span = document.createElement('span')
         span.innerHTML = "\u00d7"
         li.appendChild(span)
+        data()
     }
     else {
         alert("⚠ Enter any value and Enter more than three character")
+        data()
     }
     inputel.value = ''
 }
+
+inputel.addEventListener('keyup', (e) => {
+    if (e.key === 'Enter') {
+        createelement()
+    }
+})
 
 addbtn.addEventListener('click', createelement)
 
@@ -29,6 +37,14 @@ ul.addEventListener('click', (e) => {
     else if (e.target.localName === 'span') {
         e.target.parentElement.remove();
     }
-});
+}, false);
 
-localStorage
+function data() {
+    localStorage.setItem('data', ul.innerHTML)
+}
+
+function showtask() {
+    ul.innerHTML = localStorage.getItem('data');
+}
+
+showtask()
