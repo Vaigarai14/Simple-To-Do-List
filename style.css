@@ -35,18 +35,19 @@ body {
   border: none;
   width: 250px;
   background-color: rgb(216, 216, 216);
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
 }
 
 #addbtn {
-  padding: 0.9em 2em;
+  padding: 1em 2em;
   border: none;
-  border-radius: 10em;
+  border-radius: 30em;
   position: absolute;
   left: 16em;
   background-color: black;
   color: white;
   font-family: cursive;
+  font-size: 12.6px;
 }
 
 ul li {
